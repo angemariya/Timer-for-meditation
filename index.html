@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+
+    <title>Meditation timer</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form class="timer" onsubmit="app.submit(event)">
+            <div class="info">
+                Set timer for
+                <input type="number" name="time" value="10" aria-label="Set time in minuts for your meditation" />
+                minuts
+            </div>
+            <div class="countdown">
+                <div class="num" id="min_tens">0</div>
+                <div class="num" id="min">0</div>
+                <div class="dots">:</div>
+                <div class="num" id="sec_tens">0</div>
+                <div class="num" id="sec">0</div>
+            </div>
+            <button type="submit" class="button">
+                <img src="./images/Play.svg" alt="icon play">
+                Start
+            </button>
+        </form>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
